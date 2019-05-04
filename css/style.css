@@ -193,7 +193,7 @@ body {
 
 .contact-form input, .contact-form textarea {
   padding: 10px 12px;
-  border-radius: 0;
+  border-radius: 5px;
   box-shadow: none;
   font-size: 14px;
   height: auto;
