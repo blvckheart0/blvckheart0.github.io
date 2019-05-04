@@ -41,7 +41,7 @@ body {
 	min-height: 700px;
 	color: white;
 	text-align: center;
-	padding-top: 120px;	
+	padding-top: 100px;	
 }
 #headerwrap img{
 	width: 40%;
@@ -50,7 +50,7 @@ body {
 
 #headerwrap h1 {
 	font-weight: 100;
-	font-size: 48px;
+	font-size: 50px;
 }
 
 #headerwrap h2,span{
@@ -95,6 +95,10 @@ body {
 	padding-left: 15px;
 	padding-right: 15px;
 	margin-bottom: 40px;
+}
+.linewrap p{
+	text-align: left;
+
 }
 
 .linewrap:hover {
@@ -189,7 +193,7 @@ body {
 
 .contact-form input, .contact-form textarea {
   padding: 10px 12px;
-  border-radius: 5px;
+  border-radius: 0;
   box-shadow: none;
   font-size: 14px;
   height: auto;
@@ -210,8 +214,5 @@ body {
   margin: 0 0 15px 0;
   font-weight: 400;
   font-size: 13px;
-}
-.form-group{
-border-radius: 5px;
 }
 
