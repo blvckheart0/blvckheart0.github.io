@@ -1,11 +1,3 @@
-/**
-*  Template Name: SimpleLanding
-*  Template URL: https://templatemag.com/simplelanding-bootstrap-landing-page-template/
-*  Author: TemplateMag.com
-*  License: https://templatemag.com/license/
-*/
-
-
 body {
   padding-top: 50px;
   font-family: 'Lato', sans-serif;
@@ -15,12 +7,19 @@ body {
 .navbar-brand {
 	font-weight: 900;
 	text-transform: uppercase;
-	font-size: 16px;
+	font-size: 18px;
 }
-
-.navbar-inverse {
+.navbar {
 	background-color: #232323;
 	border: 0px;
+}
+.navbar-inverse .navbar-nav > .active > a, 
+.navbar-inverse .navbar-nav > .active > a:hover, 
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > .nav-item > a:hover
+{
+    color: #555;
+    background-color: #E7E7E7;
 }
 
 .starter-template {
@@ -42,15 +41,19 @@ body {
 	min-height: 700px;
 	color: white;
 	text-align: center;
-	padding-top: 120px;
+	padding-top: 120px;	
+}
+#headerwrap img{
+	width: 40%;
+	opacity: 0.5;
 }
 
 #headerwrap h1 {
 	font-weight: 100;
-	font-size: 70px;
+	font-size: 60px;
 }
 
-#headerwrap h2 {
+#headerwrap h2,span{
 	color: #777777;
 	font-size: 28px;
 	font-weight: 300;
@@ -59,6 +62,9 @@ body {
 #headerwrap .gobottom {
 	bottom: 0 !important;
 	margin-bottom: 0px;
+}
+#stl {
+	background-color: white;
 }
 
 #secondwrap {
@@ -106,9 +112,9 @@ body {
 #spacerwrap {
 	width: 100%;
 	min-height: 400px;
-	padding-top: 100px;
+	padding-top: 80px;
 	color: white;
-	background-image: url(../img/spacer.jpg);
+	background-image: url(../img/spacer.png);
 	text-align: center;
 }
 
@@ -116,16 +122,16 @@ body {
 	color: white;
 	font-weight: 100;
 	font-size: 40px;
+	padding-bottom: 20px;
 }
-#spacerwrap h4 {
-	color: #777777;
-	font-weight: 400;
-	font-size: 18px;
+
+#spacerwrap p{
+	font-size: 25px;
 }
 
 #finalwrap {
-	padding-top: 100px;
-	padding-bottom: 100px;
+	padding-top: 70px;
+	padding-bottom: 150px;
 	background-color: #f4f4f4;
 	color: #2f2f2f;
 }
@@ -140,70 +146,43 @@ body {
 	font-size: 24px;
 }
 
-/* FORM CONFIGURATION */
-
-input {
-	font-size: 16px;
-	min-height: 40px;
-	border-radius: 25px;
-	line-height: 20px;
-	padding: 11px 30px 12px;
-	border: 1px solid #b9b9af;
-	margin-bottom: 10px;
-	background-color: #fff;
-	-webkit-transition: background-color 0.2s;
-	transition: background-color 0.2s;
-}
-
-.subscribe-input {
-	float: left;
-	width: 65%;
-	text-align: left;
-	margin-right: 2px;
-}
-
-.subscribe-submit {
-	right: 0;
-}
-
-
-/*Buttons Configuration */
 
 .btn-conf-2 {
 	border-radius: 50px;
 	margin-right: 15px;
-	font-size: 14px;
+	font-size: 18px;
 	font-weight: 300;
-	letter-spacing: 1px;
+	letter-spacing: 1.2px;
 	text-transform: uppercase;
-	padding: 14px 28px 13px 28px;
+	padding: 25px 60px 25px 60px;
+	background: rgb(79, 255, 109);
+	color: white;
 	}
 
-.btn-yellow {
-	background: #F7CA18;
-	color: white
+
+#footer {
+  background: #f4f4f4;
+	padding: 20px 0;
+	text-align: center;
 }
-
-
-/* Contact Form */
-
-#get-in-touch {
+/* Order */
+#order {
   background: #fff;
-  padding: 80px 0;
+	padding: 50px 20px;
+	border-radius: 20px;
+	margin-bottom: 100px;
 }
 
-#get-in-touch h1 {
+#order h1 {
   font-weight: 300;
   font-size: 48px;
 }
 
-#get-in-touch h3 {
+#order h3 {
   font-weight: 300;
   font-size: 24px;
   margin-bottom: 30px;
 }
-
-
 .contact-form {
   text-align: left;
 }
@@ -220,15 +199,6 @@ input {
   text-align: center;
 }
 
-.contact-form .form-send button  {
-  background: #F7CA18;
-  border: 0;
-  padding: 15px 50px;
-  color: #fff;
-  transition: 0.4s;
-  cursor: pointer;
-  border-radius: 50px;
-}
 
 .contact-form .form-send button:hover {
   color: #111;
@@ -242,78 +212,3 @@ input {
   font-size: 13px;
 }
 
-.contact-form .loading {
-  display: none;
-  color: #555;
-  background: #fff;
-  text-align: center;
-  padding: 15px;
-  margin: 15px 0;
-}
-
-.contact-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  border: 3px solid #18d26e;
-  border-top-color: #eee;
-  -webkit-animation: animate-loading 1s linear infinite;
-  animation: animate-loading 1s linear infinite;
-}
-
-@-webkit-keyframes animate-loading {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes animate-loading {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-.contact-form .error-message {
-  display: none;
-  color: #fff;
-  background: #ed3c0d;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-  margin: 15px 0;
-}
-
-.contact-form .sent-message {
-  display: none;
-  color: #fff;
-  background: #18d26e;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-  margin: 15px 0;
-}
-
-/* Footer */
-
-#footer {
-  background: #f4f4f4;
-  padding: 20px 0;
-}
-
-#copyrights {
-  text-align: center;
-}
