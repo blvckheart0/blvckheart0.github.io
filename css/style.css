@@ -43,10 +43,6 @@ body {
 	text-align: center;
 	padding-top: 100px;	
 }
-#ind{
-	width: 40%;
-	opacity: 0.5;
-}
 
 #headerwrap h1 {
 	font-weight: 100;
@@ -63,8 +59,13 @@ body {
 	bottom: 0 !important;
 	margin-bottom: 0px;
 }
+
 #stl {
 	background-color: white;
+}
+#ind{
+	width: 40%;
+	opacity: 0.5;
 }
 
 .row img{
@@ -178,7 +179,7 @@ body {
 	width: 32px;
 	margin: 10px 10px;
 }
-/* Order */
+/* Order and Mail */
 #order {
   background: #fff;
 	padding: 50px 20px;
@@ -224,7 +225,7 @@ body {
   font-weight: 400;
   font-size: 13px;
 }
-
+/* Articles */
 .article {
   background: #fff;
 	padding: 10px 5px 15px 15px;
